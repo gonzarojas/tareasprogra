@@ -37,18 +37,13 @@ int main()
         x=i;
         cout<<i<<" "<<formulauno(x)<<endl;
         }
-    }
-    else
-    if(num==2){
+    } else if(num==2){
                 int i,j;
                 cout<<"x"<<" | "<<"y"<<" | "<<"f(x,y)"<<endl;
                 cout<<"--+---+------"<<endl;
-                cout<<formulados(i,j,num)<<endl;
-                cout<<"----------------------------------------------"<<endl;
-        }
-
-    else
-    if(num==3){
+                formulados(i,j,num);
+                // cout<<"----------------------------------------------"<<endl;
+    } else if(num==3){
         cout<<"INGRESE EL NUMERO MINIMO A TABULAR"<<endl;
         cin>>menor;
         cout<<"INGRESE EL NUMERO MAXIMO A TABULAR"<<endl;
@@ -72,7 +67,6 @@ float formulauno(double &x){
 
 
 int formulados(int i,int j,int num){
-
     for(int i=1;i<=5;i++){
 
         for(int j=1;j<=5;j++){
